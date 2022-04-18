@@ -1,0 +1,1 @@
+python3 ushi-bot.py
