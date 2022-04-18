@@ -17,6 +17,7 @@ line_bot_api = LineBotApi(
 handler = WebhookHandler('023fe4d110e28165068f2a121bfc0048')
 
 
+
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
@@ -37,7 +38,7 @@ def callback():
 
 @app.route("/test", methods=['GET'])
 def test():
-    return 200
+    return "OK"
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
