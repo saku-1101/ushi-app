@@ -35,6 +35,9 @@ def callback():
 
     return 'OK'
 
+@app.route("/test", methods=['GET'])
+def test():
+    return 200
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
